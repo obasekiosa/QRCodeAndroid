@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">QR Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="full_name_hint">Full name</string>
+    <string name="address_hint">Address</string>
+    <string name="Submit">Submit</string>
+    <string name="form_instruction">Kindly fill in your full name and address in the fields provided. Click the submit button on completion</string>
+    <string name="qr_title">QR CODE</string>
+    <string name="date_updated">"Date Updated: "</string>
+    <string name="date_created">"Date Created: "</string>
+    <string name="address">"Address: "</string>
+    <string name="full_name">"Full Name: "</string>
+    <string name="form_id">"Form ID: "</string>
+    <string name="form_display_information">Form Details</string>
+
+</resources>
