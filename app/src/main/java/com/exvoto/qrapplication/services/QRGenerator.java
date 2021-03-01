@@ -26,10 +26,8 @@ public class QRGenerator {
 
     public static Bitmap generateQRCodeBitmap(String s) {
         if (s == null) throw new IllegalArgumentException("String can not be null to generate QR code");
-//        if (dimension == 0) throw new IllegalArgumentException("QRCode dimension can not be zero (0)");
 
-        EMail e = new EMail("obasekiosa@gmail.com");
-        Log.e(TAG, "String contents: " + s);
+        Log.i(TAG, "String contents: " + s);
         return QRCode.from(s).withSize(256, 256).bitmap();
     }
 }
