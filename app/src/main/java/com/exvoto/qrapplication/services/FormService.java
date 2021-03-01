@@ -48,6 +48,7 @@ public class FormService {
         return db.getAll();
     }
 
+    //Todo: remove all ":" colons and replace all , with a delimiter such as space
     public static Bitmap getQRCode(FormData form) {
         StringBuilder s = new StringBuilder();
         s.append("ID ");
