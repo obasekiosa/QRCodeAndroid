@@ -49,7 +49,7 @@ public class FormActivity extends AppCompatActivity {
            int formId = formService.saveForm(new FormData(name, address));
            // Todo: replace string with string resource
            Toast.makeText(getApplicationContext(), "Form Saved", Toast.LENGTH_SHORT).show();
-           Intent formViewIntent = new Intent(this, FormViewActivity.class);
+           Intent formViewIntent = new Intent(this, FormListActivity.class);
            Log.e(TAG, "ID: " + formId);
            formViewIntent.putExtra(Constants.EXTRA_FORM_ID, formId);
            startActivity(formViewIntent);

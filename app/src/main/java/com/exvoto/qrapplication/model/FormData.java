@@ -1,6 +1,7 @@
 package com.exvoto.qrapplication.model;
 
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Date;
 import java.util.Objects;

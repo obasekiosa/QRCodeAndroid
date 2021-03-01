@@ -15,5 +15,6 @@
     <string name="full_name">"Full Name: "</string>
     <string name="form_id">"Form ID: "</string>
     <string name="form_display_information">Form Details</string>
+    <string name="name">"Name: "</string>
 
 </resources>
