@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 
 public abstract class MockFormDataHolder {
@@ -88,9 +89,21 @@ public abstract class MockFormDataHolder {
             return result;
         }
 
+        String[] names = new String[] {
+                "Seki", "Osakpolor", "Johnson", "Raymond", "Reddington", "John"
+        };
+
+        final int NUM_ENTRIES = 20;
+
         // pre Populate data base with data
         public void prePopulate() {
-
+            Random random = new Random();
+            for (int i = 0; i < NUM_ENTRIES; i++) {
+                FormData form = new FormData(names[random.nextInt(names.length)]
+                        + " " + names[random.nextInt(names.length)],
+                        names[random.nextInt(names.length)] + " Street");
+                save(form);
+            }
         }
     }
 }
